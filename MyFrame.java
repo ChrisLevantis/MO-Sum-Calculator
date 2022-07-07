@@ -26,10 +26,9 @@ public class MyFrame extends JFrame implements ActionListener {
     MyFrame()
     {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setResizable(true);
+        this.setResizable(false);
         //this.setLayout(new FlowLayout()); // if you add this it will not work...
         this.setSize(500,150);
-        this.setVisible(true);
 
         // row 1 with the text inside it...
         row1 = new JPanel();
@@ -89,6 +88,7 @@ public class MyFrame extends JFrame implements ActionListener {
         this.add(row1, BorderLayout.NORTH); // attached to the top
         this.add(row2, BorderLayout.CENTER);
         this.add(row3, BorderLayout.SOUTH);
+        this.setVisible(true);
         //this.pack();
 
     }
